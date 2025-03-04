@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaaradhiFarms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header */
+        .header {
+            background: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .scroll-text {
+            display: flex;
+            flex-direction: column;
+            animation: scrollText 5s linear infinite;
+        }
+        @keyframes scrollText {
+            0% { transform: translateY(0); }
+            33% { transform: translateY(-30px); }  /* Scrolls to second line */
+            66% { transform: translateY(-60px); }  /* Scrolls to third line */
+            100% { transform: translateY(0); } /* Loops back */
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #FBC02D;
+            padding: 15px 20px;
+        }
+
+        /* Logo */
+        .logo {
+            height: 50px;
+        }
+
+        /* Centering Menu */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex: 1; /* Takes up available space */
+            justify-content: center; /* Centers the menu */
+            gap: 20px;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Icons on the right */
+        .nav-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-icons i {
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .nav-icons i:hover {
+            color: white;
+        }
+
+        /* Sidebar Filters */
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 20%;
+            padding: 10px;
+            background: whitesmoke;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 10px;
+        }
+
+        .product-list {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            width: 30%;
+            padding: 15px;
+            border: 1px solid gray;
+            text-align: center;
+            background: white;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below inline images */
+        }
+
+        .product-details {
+            margin-top: 10px; /* Adjust spacing as needed */
+            text-align: center;
+        }
+
+
+        /* Footer */
+        .footer {
+            background: #FBC02D;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer div {
+            width: 45%;
+        }
+
+        .footer h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="scroll-text">
+            <p>Over 55,169+ Happy Customers & Counting</p>
+        </div>
+    </div>
+    <div class="header">
+        <div class="scroll-text">
+            <p>Free Shipping On All Orders Above ₹999</p>
+        </div>
+    </div>
+   
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+<div class="navbar">
+    <img src="vaaradhilogo.png" alt="Logo">
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">View Collections</a><form>
+            <select name="Collection">
+                <option value="ghee">Ghee</option>
+                <option value="honey">Honey</option>
+            </select></form>
+        </li>
+        <li><a href="#">Shop All</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+    <!-- Icons (Moved to the right side) -->
+    <div class="nav-icons">
+        <i class="fa fa-search"></i>
+        <i class="fa fa-user"></i>
+        <i class="fa fa-shopping-cart"></i>
+    </div>
+</div>
+    <!-- Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>In stock only</h3>
+            <input type="checkbox">
+            
+            <h3>Price</h3>
+            <input type="range" min="0" max="3299">
+            <input type="text" placeholder="₹ 0"> to 
+            <input type="text" placeholder="₹ 3299">
+            
+            <h3>Collection</h3>
+            <select>
+                <option>Select</option>
+            </select>
+
+            <h3>Quantity</h3>
+            <select>
+                <option>Select</option>
+            </select>
+        </div>
+
+       
+        <!-- Products Section -->
+<div class="product-list">
+    <!-- First Row -->
+    <div class="product">
+        <div class="product-image">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/Honey2.png" alt="Farm Fresh Honey">
+        </div>
+        <div class="product-details">
+            <h3>Farm Fresh Raw Natural Honey</h3>
+            <p>From Rs. 475.00</p>
+            <p>⭐ 2119 reviews</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-image">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/Ghee_HighRes.jpg" alt="A2 Desi Cow Ghee">
+        </div>
+        <div class="product-details">
+            <h3>A2 Desi Cow Cultured Ghee</h3>
+            <p><span style="color: red;">From Rs. 925.00</span> <del>Rs. 1000.00</del></p>
+            <p>⭐ 615 reviews</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-image">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/WhatsAppImage2024-04-26at1.21.52AM.jpg?v=1714074796&width=300" alt="Wild Raw Forest Honey">
+        </div>
+        <div class="product-details">
+            <h3>Wild Raw Forest Honey</h3>
+            <p>From Rs. 575.00</p>
+            <p>⭐ 505 reviews</p>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="product">
+        <div class="product-image">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/Adityark_a_bag_of_a_tan_colored_product_filled_with_turmeric_ki_30bdb482-db0c-4404-8b6c-cb59bec40502.png?v=1685016262&width=300" alt="Unprocessed Natural Turmeric">
+        </div>
+        <div class="product-details">
+            <h3>Unprocessed Natural Turmeric</h3>
+            <p>From Rs. 199.00</p>
+            <p>⭐ 341 reviews</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-image">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/image_519177bc-9938-4cfb-b9ad-8b723ca31af2.png?v=1689100808&width=300" alt="Natural Red Chilli Powder">
+        </div>
+        <div class="product-details">
+            <h3>Natural Red Chilli Powder</h3>
+            <p>From Rs. 220.00</p>
+            <p>⭐ 121 reviews</p>
+        </div>
+    </div>
+
+    <div class="product sold-out">
+        <div class="product-image">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/vaaradhi_farms.jpg?v=1733113339&width=300" alt="Moisturizing Bee Wax Lip Balm Strawberry">
+        </div>
+        <div class="product-details">
+            <span class="sold-out-badge">Sold out</span>
+            <h3>Moisturizing Bee Wax Lip Balm Strawberry</h3>
+            <p>Rs. 249.00</p>
+            <p>⭐ 93 reviews</p>
+        </div>
+    </div>
+</div>
+    <div class="container">
+            <div class="product-list">
+                <div class="product"> ... </div> <!-- Existing products -->
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <h3>Customer Care</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Cancellation Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Information</a>
+            <a href="#">Wild Forest Honey Certificate</a>
+            <a href="#">Dark Forest Honey Certificate</a>
+        </div>
+
+        <div>
+            <h3>Contact Info</h3>
+            <p>Trade Name: VAARADHI FARMS PRIVATE LIMITED</p>
+            <p>Email: vaaradhifarms@gmail.com</p>
+            <p>Customer Care: +91 89770 21193 / +91 89770 21197</p>
+            <p>Support Timings: 10:30am - 6:30pm</p>
+            <p>Address: Manikonda, Hyderabad, Telangana, Pin - 500089</p>
+            <p>FSSAI: 23623028001252</p>
+            <h3>Legal Information</h3>
+            <p>Registered Address: Alkapur Township, Road No.25, Neknampur, Hyderabad</p>
+            <p>District: Rangareddy, Telangana - 500089</p>
+        </div>
+    </div>
+
+</body>
+</html>
